@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.common.persistence.dao.WxuserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.common.persistence.model.Wxuser">
+        <id column="id" property="id" />
+        <result column="openId" property="openId" />
+        <result column="userName" property="userName" />
+        <result column="gender" property="gender" />
+        <result column="avatarUrl" property="avatarUrl" />
+        <result column="stuName" property="stuName" />
+        <result column="stuNum" property="stuNum" />
+        <result column="country" property="country" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="session_key" property="sessionKey" />
+        <result column="unionid" property="unionid" />
+        <result column="power" property="power" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, openId, userName, gender, avatarUrl, stuName, stuNum, country, province, city, session_key AS sessionKey, unionid, power
+    </sql>
+
+</mapper>

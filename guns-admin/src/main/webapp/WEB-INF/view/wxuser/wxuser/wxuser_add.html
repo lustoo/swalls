@@ -1,0 +1,40 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <input type="hidden" id="id" value="">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键" underline="true"/>
+                            <#input id="openId" name="openid" underline="true"/>
+                            <#input id="userName" name="用户名" underline="true"/>
+                            <#input id="gender" name="性别" underline="true"/>
+                            <#input id="avatarUrl" name="头像？" underline="true"/>
+                            <#input id="stuName" name="姓名" underline="true"/>
+                            <#input id="stuNum" name="学号"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="country" name="国家" underline="true"/>
+                            <#input id="province" name="省" underline="true"/>
+                            <#input id="city" name="城市" underline="true"/>
+                            <#input id="sessionKey" name="会话密钥" underline="true"/>
+                            <#input id="unionid" name="开放平台标识符" underline="true"/>
+                            <#input id="power" name="用户限权" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="WxuserInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="WxuserInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/wxuser/wxuser/wxuser_info.js"></script>
+@}
